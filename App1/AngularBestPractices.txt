@@ -1,0 +1,23 @@
+Angular Best Practices:
+- MVC separation
+- DRY programming
+- Don't hack
+
+Don't write bad code:
+- Performance
+- Reuseablility
+- Square peg, round hole (don't force it)
+
+Test:
+- Write the tests!
+- Doesn't have to be TDD
+
+Broaden your understanding:
+- Learning curve is steep!
+- Practice being curious
+- Refactor!
+
+Read the source code!
+- Consumeable
+- Error messages are bad! (not helpful)
+- Dissect the source

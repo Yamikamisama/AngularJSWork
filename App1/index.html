@@ -1,0 +1,15 @@
+<html ng-app="app">
+<body>
+	<h1>Hello World!</h1>
+
+	<div ng-controller="MainController">
+		{{ val }}
+		<button ng-click="inc()">Click Me</button>
+		<h2 ng-show="even">Even</h2> <!-- this is bad practice -->
+		<h2 ng-hide="even">Odd</h2>
+	</div>
+
+	 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
