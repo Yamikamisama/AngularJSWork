@@ -1,0 +1,23 @@
+myDirective (conversion is hyphan and lowercase)
+
+
+//element (common)
+<my-directive><my-directive>
+
+
+//attribute (common)
+<div my-directive><div>
+
+
+//class
+<div class="my-directive"></div>
+
+
+//comment
+<!-- my-directive -->
+
+
+<inventory-list item-detail pop-out is-selected="true" />
+
+
+//directives allow you to program the DOM
