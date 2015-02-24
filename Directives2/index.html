@@ -1,26 +1,26 @@
 <html ng-app="app">
+
+<head>
+	<style type="text/css">
+		.orange{
+			color: orange;
+		}
+		.italic {
+			font-style: italic;
+		}
+	</style>
+</head>
+
 <body>
 	<div ng-controller="MainController">
-
-		<div ng-repeat="element in myarr track by $index">
-			{{element}}
-			<span ng-show="$first">first</span>
-			<span ng-show="$middle">middle</span>
-			<span ng-show="$last">last</span>
-			<span ng-show="$even">even</span>
-			<span ng-show="$odd">odd</span>
-		</div>
-
-		<div ng-repeat-start="user in users">
-			<strong> {{user.name}} </strong>: {{user.age}}
-		</div>
-		<hr/ ng-repeat-end>
-
-		<div ng-repeat="attr in ob">
-			{{attr}}
-		</div>
-
+		<h1 ng-class="{orange: classVar, italic: classVar}">Hello There!</h1>
 	</div>
+
+	<div ng-include="'test.html'"></div>
+
+	<script type="text/ng-template" id="test.html">
+		<h1>My template</h1>
+	</script>
 
 	 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
 	<script type="text/javascript" src="app.js"></script>
