@@ -1,15 +1,24 @@
 <html ng-app="app">
 
 <body>
-    <div ng-controller="MainController">
+		<div ng-controller="MainController">
+			<div>Num: {{num}} </div>
+			<div>Nums: {{nums}} </div>
+
+			<button ng-click="increment()">Increment</button>
+			<button ng-click="breakit()">Break It</button>
+		</div>
+
+   <!--  <div ng-controller="MainController">
        <input ng-model="mydata.val">
        <h1> {{ mydata.val }} </h1>
-
        <span ng-show="mydata.toolong">NAME IS TOO LONG</span>
-    </div>
+    </div> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
 </body>
 
 </html>
+
+<!-- dont make your watchers too fat keep them lean and break them when they are no longer needed! -->
