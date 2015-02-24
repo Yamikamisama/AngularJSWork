@@ -1,0 +1,19 @@
+<html ng-app="app">
+
+<head>
+	<style>
+		[ng\cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+				display: none;
+		}
+	</style>
+</head>
+
+<body>
+	<div ng-controller="MainController">
+		<span ng-cloak> {{mydata}} <div>Hey there</div> </span>
+	</div>
+
+	 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
