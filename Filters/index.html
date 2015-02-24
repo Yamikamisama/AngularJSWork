@@ -3,7 +3,7 @@
 <body>
 	<div ng-controller="MainController">
 		<input ng-model="myfilter.name">
-		<div ng-repeat="user in mydata.arr | filter:myfilter">
+		<div ng-repeat="user in mydata.arr | filter:myfilter | orderBy:'age' | limitTo:-2">
 			{{user}}
 		</div>
 	</div>
@@ -19,3 +19,5 @@
 		lowercase
 		date
  -->
+
+ <!-- Filters are generaly used in the view, not in the controllers.js, that being being said you can use a filter in the controller if you'd like -->
