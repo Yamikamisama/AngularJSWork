@@ -1,28 +1,22 @@
 <html ng-app="app">
 
-<head>
-	<style type="text/css">
-		.orange{
-			color: orange;
-		}
-		.italic {
-			font-style: italic;
-		}
-	</style>
-</head>
-
 <body>
-	<div ng-controller="MainController">
-		<h1 ng-class="{orange: classVar, italic: classVar}">Hello There!</h1>
-	</div>
+    <div ng-controller="MainController">
+        <input ng-model="mydata.val">
+				<h1> {{mydata.val}} </h1>
+				<div ng-controller="SubController">
+					<input ng-model="mydata.val">
+					<h1> {{mydata.val}} </h1>
+				</div>
+<!--         <button ng-click="mydata='123'">123</button>
+        <h1> {{mydata}} </h1> -->
 
-	<div ng-include="'test.html'"></div>
+    </div>
 
-	<script type="text/ng-template" id="test.html">
-		<h1>My template</h1>
-	</script>
-
-	 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
-	<script type="text/javascript" src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 </body>
+
 </html>
+
+<!-- The simple way to remember to use the .[property] is when you are using an sort of inheritance, otherwise Angular/JS prototypal inheritance will cause breakage -->
