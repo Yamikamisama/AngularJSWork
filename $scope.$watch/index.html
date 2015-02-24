@@ -4,6 +4,8 @@
     <div ng-controller="MainController">
        <input ng-model="mydata.val">
        <h1> {{ mydata.val }} </h1>
+
+       <span ng-show="mydata.toolong">NAME IS TOO LONG</span>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
