@@ -10,7 +10,7 @@ app.controller('MainController',function($scope){
 // define a directive
 app.directive('photo', function(){
 	return {
-		restrict: 'ACEM', //A,E,C,M you can chain 'AE'
+		restrict: 'AECM', //A,E,C,M you can chain 'AE'
 		template: '<figure><img width="500px"/><figcaption/></figure>',
 		replace: true,
 		link: function(scope, element, attrs){
