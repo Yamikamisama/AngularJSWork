@@ -3,18 +3,22 @@
 <body>
 	<div ng-controller="MainController">
 
+		<!-- Element E-->
 		<div>
 			<photo photo-src="{{photo.url}}" caption="Taken on: {{photo.date}}" />
 		</div>
 
+		<!-- Attribute A-->
 		<div>
 			<div photo photo-src="{{photo.url}}" caption="Taken on: {{photo.date}}"></div>
 		</div>
 
+		<!-- Class C-->
 		<div>
 			<div class="photo" photo-src="{{photo.url}}" caption="Taken on: {{photo.date}}"></div>
 		</div>
 
+		<!-- Comment M-->
 		<div>
 			<!-- directive: photo -->
 		</div>
